@@ -1,0 +1,83 @@
+body{
+    text-align:center;
+}
+.cell{
+    float:left;
+    width:40px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    border-right:1px solid #222;
+    border-bottom:1px solid #222;
+    cursor:pointer
+}
+#container{
+    margin:0 auto
+}
+#game{
+    border:1px solid #222;
+    display:inline-block;
+}
+.tooltip{
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #222;
+    width: 175px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top:5px;
+}
+#score{
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 175px;
+    margin: 0 auto 0 auto;
+}
+#scoretitle{
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 175px;
+    margin: 10px auto 0 auto;
+}
+#message{
+    margin-top:10px
+}
+#extra{
+    width:300px;
+    display:inline-block;
+    vertical-align: top;
+}
+#timer_on_exhausted{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: block;
+    font-size:25px;
+}
+#time{
+
+    display:block;
+}
+.cell:focus,.cell:active,.cell.active{
+    background-color:red;
+    color:#fff;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+button{
+    padding: 5px 10px;
+}
+
+.finished{
+    pointer-events: none;
+    opacity: 0.8;
+}

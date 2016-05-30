@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Find Game</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+</head>
+<body>
+<div id="container">
+    <div id="game"></div>
+    <div id="extra">
+        <section id="time">
+
+            <div class='timer-block'>
+                <div class='controls'>
+                    <button class="button button-start boo" id='start_on_exhausted'>Start Game</button>
+                    <button class="button button-reset foo" id='reset_on_exhausted' disabled>Reset Game</button>
+                </div>
+                <span id='timer_on_exhausted' class='timer'>value placeholder</span>
+            </div>
+        </section>
+        <div class="guess">
+            <button class="guessButton doo" disabled>Guess The Word</button>
+        </div>
+        <div id="scoretitle">SCORE</div>
+        <div id="score">0</div>
+        <div id="message"></div>
+        <div id="guessed">
+
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.js"></script>
+<script type="text/javascript" src="js/jquery-backward-timer.min.js"></script>
+<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/app-ext.js"></script>
+
+
+<script>
+
+    $('#game').createGame();
+
+
+</script>
+
+</body>
+</html>
